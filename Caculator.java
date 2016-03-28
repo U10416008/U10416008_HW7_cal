@@ -473,9 +473,8 @@ public class Caculator extends Application {
 			number2 = Math.sqrt(number2);
 			tex.setText(Double.toString(number2));
 		}else if(inverseNumber == true){
-			compute1 = new BigDecimal(1);
-			compute2 = new BigDecimal(number2);
-			number2 = compute1.divide(compute2).doubleValue();
+			number2 = 1/number2 ;
+			
 			tex.setText(Double.toString(number2));
 		}else if(quotient == true){
 			compute1 = new BigDecimal(number1);
